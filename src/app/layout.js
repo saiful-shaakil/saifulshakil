@@ -22,16 +22,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <>
       <Head>
         <meta
           name="google-site-verification"
           content="Q2A7o9I6sRwYs4Lnv0DLFXmJGdExNCP3wDBTwUbdGnk"
         />
       </Head>
-      <body className={`${poppins.variable} ${redditmono.variable}`}>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body className={`${poppins.variable} ${redditmono.variable}`}>
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
