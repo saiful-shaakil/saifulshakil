@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  /* common */
+  /* for width setting of a div under a parent div (section) */
+  .m_wid {
+    @apply w-[85%] mx-auto;
+  }
+  /* mobile */
+  /* parent section */
+  .m_sec {
+    @apply my-2 border-y-2 bg-white py-6;
+  }
+  /* title of any parent section */
+  .m_title_h1 {
+    @apply text-[25px] font-semibold mb-5 font-sourcesans;
+  }
+  /* lg */
+  /* parent section */
+  .l_sec {
+    @apply w-full min-h-screen max-h-fit py-28 border-y-0;
+  }
+  /* title of any parent section */
+  .l_title_h1 {
+    @apply text-[40px] text-center font-poppins font-semibold mb-20;
+  }
+  .l_subtitle {
+    @apply text-[22px] font-semibold font-sourcesans;
+  }
+  /* area of interest page each div */
+  .p_div {
+    @apply flex flex-col justify-center items-center gap-y-3;
+  }
+  /* for snap of each section */
+  .snap_div {
+    @apply lg:h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory;
+  }
+  .snap_child {
+    @apply lg:h-screen lg:snap-start;
+  }
+}

@@ -1,6 +1,5 @@
 import "./globals.css";
-import { Poppins, Reddit_Mono } from "next/font/google";
-import Head from "next/head";
+import { Poppins, Reddit_Mono, Source_Sans_3, Roboto } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,6 +12,16 @@ const redditmono = Reddit_Mono({
   variable: "--font-redditmono",
   weight: ["400", "500", "600", "700"],
 });
+const sourcesans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-sourcesans",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export const metadata = {
   title: "Saiful Islam Shakil | Data Analyst | Data Science Enthusiast",
@@ -22,18 +31,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="Q2A7o9I6sRwYs4Lnv0DLFXmJGdExNCP3wDBTwUbdGnk"
-        />
-      </Head>
-      <html lang="en">
-        <body className={`${poppins.variable} ${redditmono.variable}`}>
-          {children}
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <body
+        className={`${poppins.variable} ${redditmono.variable} ${sourcesans.variable} ${roboto.variable}`}
+      >
+        {children}
+      </body>
+    </html>
   );
 }
