@@ -11,23 +11,24 @@ export const AreasOfInterest = () => {
             <MdOutlineAnalytics className="text-[100px]" />
             <h2 className="l_subtitle">Data Analytics</h2>
             <p className="font-roboto w-[80%]">
-              I love to dig data to get the important insights for solving real
-              world business problems.
+              I love digging into data to uncover important insights for solving
+              real-world business problems.
             </p>
           </div>
           <div className="p_div">
             <FaChartArea className="text-[100px]" />
             <h2 className="l_subtitle">Data Visualization</h2>
             <p className="font-roboto w-[80%]">
-              I love to tell story using data and making beautiful presentation.
+              I love telling stories using data and creating beautiful
+              presentations.
             </p>
           </div>
           <div className="p_div">
             <FaLaptopHouse className="text-[100px]" />
             <h2 className="l_subtitle">Model Development</h2>
             <p className="font-roboto w-[80%]">
-              I love to implement machine learning models in real world
-              production systems using REST API.
+              I love developing and implementing machine learning models in
+              real-world production systems.
             </p>
           </div>
         </div>

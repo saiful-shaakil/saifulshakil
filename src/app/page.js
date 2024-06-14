@@ -1,5 +1,6 @@
 "use client";
 
+import { Certifications } from "./components/Common/Certifications";
 import { AreasOfInterest } from "./components/Desktop/AreasOfInterest";
 import { Home_Section } from "./components/Desktop/Home_Section";
 import { About } from "./components/Mobile/About";
@@ -14,11 +15,13 @@ export default function Home() {
         <HomeSection />
         <About />
         <AreasOfInterest />
+        <Certifications />
         <ContactMe />
       </div>
       <div className="hidden md:block lg:snap_div">
         <Home_Section />
         <AreasOfInterest />
+        <Certifications />
         <ContactMe />
       </div>
     </main>

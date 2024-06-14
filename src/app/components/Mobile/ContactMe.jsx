@@ -36,10 +36,7 @@ const ContactMe = () => {
   }
 
   return (
-    <section
-      className="m_sec md:l_sec font-roboto -mt-2 md:bg-transparent lg:snap_child"
-      id="contact"
-    >
+    <section className="m_sec md:l_sec font-roboto lg:snap_child" id="contact">
       <div className="m_wid">
         <h1 className="m_title_h1 md:l_title_h1">Want to Talk?</h1>
         <div className="lg:flex lg:gap-x-10 lg:justify-between">

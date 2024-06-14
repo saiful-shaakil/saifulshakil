@@ -23,7 +23,7 @@
   /* lg */
   /* parent section */
   .l_sec {
-    @apply w-full min-h-screen max-h-fit py-28 border-y-0;
+    @apply w-full min-h-screen max-h-fit py-28 border-y-0 -mt-2;
   }
   /* title of any parent section */
   .l_title_h1 {
