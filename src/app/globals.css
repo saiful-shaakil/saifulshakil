@@ -14,7 +14,7 @@
   /* mobile */
   /* parent section */
   .m_sec {
-    @apply w-full py-16 border-y-0 -mt-2;
+    @apply w-full py-20 border-y-0 -mt-2;
   }
   /* title of any parent section */
   .m_title_h1 {
