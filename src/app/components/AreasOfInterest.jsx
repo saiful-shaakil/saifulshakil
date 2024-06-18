@@ -3,7 +3,10 @@ import { MdOutlineAnalytics } from "react-icons/md";
 import { FaChartArea, FaLaptopHouse } from "react-icons/fa";
 export const AreasOfInterest = () => {
   return (
-    <section className="m_sec md:l_sec lg:snap_child" id="areas_of_interest">
+    <section
+      className="m_sec md:l_sec lg:snap_child bg-white"
+      id="areas_of_interest"
+    >
       <div className="m_wid">
         <h1 className="m_title_h1 md:l_title_h1">Areas of Interest</h1>
         <div className="flex items-center justify-center flex-col gap-y-10 text-center lg:flex-row lg:h-[50vh]">

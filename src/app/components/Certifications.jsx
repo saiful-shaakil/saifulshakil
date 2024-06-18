@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import ibm from "../../../../public/cert/ibm_da_certificate.jpg";
-import sql from "../../../../public/cert/sql_intermediate certificate.png";
-import webdev from "../../../../public/cert/certificate_of_complete_web_development_course.png";
+import ibm from "../../../public/cert/ibm_da_certificate.jpg";
+import sql from "../../../public/cert/sql_intermediate certificate.png";
+import webdev from "../../../public/cert/certificate_of_complete_web_development_course.png";
 import Link from "next/link";
 
 export const Certifications = () => {
   return (
     <section
       className="m_sec md:l_sec md:bg-transparent lg:snap_child"
-      id="about"
+      id="certifications"
     >
       <div className="m_wid">
         <h1 className="m_title_h1 md:l_title_h1">Certifications</h1>{" "}

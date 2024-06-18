@@ -14,11 +14,11 @@
   /* mobile */
   /* parent section */
   .m_sec {
-    @apply my-2 border-y-2 bg-white py-6;
+    @apply w-full py-16 border-y-0 -mt-2;
   }
   /* title of any parent section */
   .m_title_h1 {
-    @apply text-[25px] font-semibold mb-5 font-sourcesans;
+    @apply text-[35px] text-center font-semibold mb-10 font-sourcesans;
   }
   /* lg */
   /* parent section */
@@ -37,10 +37,10 @@
     @apply flex flex-col justify-center items-center gap-y-3;
   }
   /* for snap of each section */
-  .snap_div {
+  /* .snap_div {
     @apply lg:h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory;
   }
   .snap_child {
     @apply lg:h-screen lg:snap-start;
-  }
+  } */
 }

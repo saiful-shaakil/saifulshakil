@@ -1,3 +1,4 @@
+import { Navbar } from "./components/Navbar/Navbar";
 import "./globals.css";
 import { Poppins, Reddit_Mono, Source_Sans_3, Roboto } from "next/font/google";
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${redditmono.variable} ${sourcesans.variable} ${roboto.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

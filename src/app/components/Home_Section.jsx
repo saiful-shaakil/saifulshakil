@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import dp from "../../../../public/dp.png";
-import ParticlesComponent from "../Particle";
-import { LgNavbar } from "../Navbar/LgNavbar";
+import dp from "../../../public/dp.png";
+import ParticlesComponent from "./Particle";
 export const Home_Section = () => {
   return (
-    <section className="h-screen lg:snap_child" id="home">
-      <LgNavbar />
-      <div className="flex justify-center items-center flex-col h-[90%] md:h-[95%]">
+    <section
+      className="flex justify-center items-center h-screen lg:snap_child"
+      id="home"
+    >
+      <div className="flex justify-center items-center flex-col mt-16">
         {/* <Image src={dp} className="rounded-full w-[280px]" alt="dp"></Image> */}
         {/*  */}
-        <div className="relative w-64 h-64">
+        <div className="relative w-44 h-44 tsm:w-48 tsm:h-48 md:w-64 md:h-64">
           {/* First Background Layer */}
           <div className="absolute inset-0 bg-[#7fd1a3] transform rotate-6"></div>
           {/* Second Background Layer */}
@@ -25,10 +26,13 @@ export const Home_Section = () => {
           </div>
         </div>
         {/*  */}
-        <h1 className="mt-5 md:mt-8 text-[40px] md:text-[60px] font-poppins font-semibold text-center">
+        <h1 className="mt-5 md:mt-8 text-[30px] md:text-[60px] font-poppins font-semibold text-center">
           Saiful Islam Shakil
         </h1>
-        <span className="font-poppins text-center ">
+        <span className="font-poppins text-center md:hidden">
+          Data Analyst <br /> Data Science Enthusiast
+        </span>
+        <span className="font-poppins text-center hidden md:block">
           Data Analyst | Data Science Enthusiast
         </span>
       </div>
